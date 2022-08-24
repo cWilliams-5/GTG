@@ -1,0 +1,49 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    background-color: black;
+}
+    .task-item_title {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-flow: row;
+    justify-content: flex-start;
+    flex: 1;
+    }
+    .task-item h2 {
+        font-size: 1rem;
+        flex: 1;
+        margin: 0 1rem;
+        color: rgb(184, 183, 183);
+    }
+    .task-item_due_date {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgb(184, 183, 183);
+        align-items: flex-end;
+    }
+    
+    @media (min-width: 580px) {
+        .task-item {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1;
+        }
+        .task-item_title {
+            font-size: 1.25rem;
+            padding: 0.5rem 1.5rem;
+    
+        }
+        .task-item_due_date {
+            font-size: 1.25rem;
+            padding: 0.5rem 1.5rem;
+    
+        }
+    }
